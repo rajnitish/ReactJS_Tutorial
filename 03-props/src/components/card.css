@@ -1,0 +1,36 @@
+.card {
+  border: 1px solid #c3c61d;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  caret-color: white;
+  border-radius: 10px;
+  background-color: #902c2c;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #c1bc2b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  :hover {
+    background-color: #a44343;
+    text-decoration: underline;
+
+  }
+}
+
+.card p {
+  color: white;
+  font-size: 14px;
+}

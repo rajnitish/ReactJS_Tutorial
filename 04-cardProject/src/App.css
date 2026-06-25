@@ -1,0 +1,13 @@
+/* App.css */
+
+#root {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}

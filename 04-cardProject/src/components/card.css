@@ -1,0 +1,163 @@
+.parent {
+  display: flex;
+}
+
+.card {
+  /* Reduced width from 340px to 280px */
+  width: 280px; 
+  /* Reduced padding from 24px to 18px */
+  padding: 18px;
+  border-radius: 20px; /* Slightly tighter border radius */
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow:
+    0 8px 32px rgba(31, 38, 135, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Scaled down height */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top img {
+  /* Reduced logo from 60px to 45px */
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: white;
+}
+
+.top button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* Snugger button padding */
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #333;
+  font-weight: 500;
+  font-size: 13px; /* Slightly smaller button text */
+  transition: all 0.3s ease;
+}
+
+.top button:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.center {
+  margin-top: 18px; /* Tighter spacing */
+}
+
+.center h3 {
+  font-size: 16px; /* Reduced from 22px */
+  font-weight: 600;
+  color: #222;
+}
+
+.center h3 span {
+  font-size: 11px;
+  color: #666;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+.center h2 {
+  margin-top: 6px;
+  font-size: 22px; /* Reduced from a massive 36px */
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tags span {
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  font-size: 11px;
+  font-weight: 500;
+  color: #333;
+}
+
+.divider {
+  height: 1px;
+  /* Heavily reduced the huge top margin from 80px to 24px */
+  margin: 24px 0 16px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer h3 {
+  font-size: 20px; /* Reduced from 28px */
+  font-weight: 700;
+  color: #111;
+}
+
+.footer p {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #666;
+}
+
+.apply-btn {
+  /* Smaller, sleeker button padding */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(20, 20, 20, 0.8);
+  color: white;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(20, 20, 20, 0.95);
+}
